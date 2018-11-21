@@ -2106,7 +2106,7 @@ class MaskRCNN():
             from keras.engine import saving
         except ImportError:
             # Keras before 2.2 used the 'topology' namespace.
-            from keras.engine import topology as saving
+            from keras.engine import saving as saving
 
         if exclude:
             by_name = True
